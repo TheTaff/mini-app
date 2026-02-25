@@ -1,0 +1,59 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  border-bottom: 1px solid #ccc;
+  background: #fff;
+}
+
+.stats span {
+  margin-left: 20px;
+}
+
+.container {
+  display: flex;
+  height: calc(100vh - 50px);
+}
+
+.sidebar {
+  width: 200px;
+  border-right: 1px solid #ccc;
+  padding: 10px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.sidebar li.active {
+  color: #555;
+  font-weight: bold;
+}
+
+.content {
+  flex: 1;
+  background: #ddd;
+  padding: 20px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.menu-item input {
+  margin-top: 5px;
+}
+
+.value {
+  font-size: 0.9em;
+  color: #666;
+}

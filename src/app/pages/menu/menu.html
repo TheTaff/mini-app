@@ -1,0 +1,33 @@
+<div class="header">
+  <span>Раздел: Тип 1</span>
+  <div class="stats">
+    <span>Выбрано пунктов: {{ selectedCount() }}</span>
+    <span>Общее значение: {{ totalValue() }}</span>
+  </div>
+</div>
+
+<div class="container">
+  <div class="sidebar">
+    <ul>
+      <li class="active">Тип 1</li>
+      <li>Тип 2</li>
+    </ul>
+  </div>
+
+  <div class="content">
+    @for (item of items(); track item.id) {
+      <div class="menu-item">
+        <input 
+          type="checkbox" 
+          [id]="'item-' + item.id" 
+          [checked]="item.selected" 
+          (change)="toggleItem(item.id)"
+        >
+        <label [for]="'item-' + item.id">
+          <strong>{{ item.name }}</strong>
+          <div class="value">Value: {{ item.value }}</div>
+        </label>
+      </div>
+    }
+  </div>
+</div>
