@@ -7,10 +7,10 @@
 ## Технологический стек
 Проект разработан с использованием последних версий инструментов:
 
-**Angular 19+** (Standalone components, Signals) 
-**TypeScript** 
-**HTML5 / CSS3** 
-**Angular CLI** для сборки и деплоя 
+* **Angular 19+** (Standalone components, Signals) 
+* **TypeScript** 
+* **HTML5 / CSS3** 
+* **Angular CLI** для сборки и деплоя 
 
 ## Реализованный функционал
 
